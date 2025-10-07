@@ -64,7 +64,7 @@ mfe-boilerplate/
 ### Development Tools
 
 - **Package Manager**: pnpm
-- **Code Quality**: ESLint, Prettier
+- **Code Quality**: ESLint, Prettier/q
 - **Git Hooks**: Husky with lint-staged
 - **Commit Linting**: Commitlint
 - **Testing**: Jest (not fully configured in boilerplate)
