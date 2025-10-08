@@ -1,3 +1,18 @@
+@import "../../../../packages/design-tokens/tokens.css";
+@import "../../../../packages/design-tokens";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body { @apply bg-gray-50 text-gray-900; }
+}
+
+@layer components {
+  .btn { @apply inline-flex items-center px-3 py-2 rounded-xl bg-primary text-white; }
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

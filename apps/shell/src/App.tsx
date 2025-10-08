@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Catalog, Checkout, Account, Admin } from './remotes';
+import './styles/App.css';
 
 const Header = () => (
   <header
@@ -22,6 +23,7 @@ const Header = () => (
 const App = () => (
   <Router>
     <Header />
+    <div className="text-red-500">shell app</div>
     <main style={{ padding: '1rem' }}>
       <React.Suspense fallback="Loading...">
         <Routes>
