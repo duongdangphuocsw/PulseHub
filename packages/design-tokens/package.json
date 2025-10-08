@@ -2,5 +2,12 @@
   "name": "@mfe/design-tokens",
   "version": "1.0.0",
   "main": "index.css",
-  "style": "index.css"
+  "style": "index.css",
+  "files": [
+    "src/tokens.css"
+  ],
+  "exports": {
+    "./tokens.css": "./src/tokens.css",
+    ".": "./src/tokens.css"
+  }
 }
