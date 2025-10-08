@@ -2,7 +2,7 @@ import React from 'react';
 
 // Create a wrapper component for lazy loading with error handling
 const createLazyComponent = (
-  importFn: () => Promise<{ default: React.ComponentType<any> }>
+  importFn: () => Promise<{ default: React.ComponentType<unknown> }>
 ) => {
   return React.lazy(() =>
     importFn().catch(() => {

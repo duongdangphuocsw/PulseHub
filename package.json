@@ -23,9 +23,5 @@
     "build": "turbo build",
     "lint": "turbo lint",
     "test": "turbo test"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
-    "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
   }
 }
