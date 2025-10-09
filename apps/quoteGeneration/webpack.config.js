@@ -4,7 +4,7 @@ const {
 } = require('@angular-architects/module-federation/webpack');
 
 module.exports = withModuleFederationPlugin({
-  name: 'checkout',
+  name: 'quoteGeneration',
 
   exposes: {
     './App': './src/app/app.ts',

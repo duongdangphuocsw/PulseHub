@@ -1,4 +1,4 @@
-declare module 'catalog/App';
-declare module 'checkout/App';
-declare module 'account/App';
+declare module 'habitTracking/App';
+declare module 'quoteGeneration/App';
+declare module 'decisionJournal/App';
 declare module 'admin/App';

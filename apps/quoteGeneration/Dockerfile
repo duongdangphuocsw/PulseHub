@@ -8,6 +8,6 @@ RUN pnpm build
 
 # production stage
 FROM nginx:stable-alpine as production
-COPY --from=build /app/dist/checkout/browser /usr/share/nginx/html
+COPY --from=build /app/dist/quoteGeneration/browser /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

@@ -4,7 +4,7 @@ const Profile = () => (
   <div>
     <h2>My Profile</h2>
     <p>Username: testuser</p>
-    <Link to="/account/orders">My Orders</Link>
+    <Link to="/decisionJournal/orders">My Orders</Link>
   </div>
 );
 
@@ -15,7 +15,7 @@ const Orders = () => (
       <li>Order 1</li>
       <li>Order 2</li>
     </ul>
-    <Link to="/account">Back to Profile</Link>
+    <Link to="/decisionJournal">Back to Profile</Link>
   </div>
 );
 

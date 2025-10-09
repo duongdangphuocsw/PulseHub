@@ -7,7 +7,7 @@
 	},
 	"newProjectRoot": "projects",
 	"projects": {
-		"checkout": {
+		"quoteGeneration": {
 			"projectType": "application",
 			"schematics": {},
 			"root": "",
@@ -32,7 +32,7 @@
 							"src/styles.css"
 						],
 						"main": "src/main.ts",
-						"outputPath": "dist/checkout",
+						"outputPath": "dist/quoteGeneration",
 						"index": "src/index.html",
 						"extraWebpackConfig": "webpack.config.js",
 						"commonChunk": false
@@ -66,11 +66,11 @@
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
-							"buildTarget": "checkout:build:production",
+							"buildTarget": "quoteGeneration:build:production",
 							"extraWebpackConfig": "webpack.prod.config.js"
 						},
 						"development": {
-							"buildTarget": "checkout:build:development"
+							"buildTarget": "quoteGeneration:build:development"
 						}
 					},
 					"defaultConfiguration": "development",

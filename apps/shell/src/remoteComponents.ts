@@ -16,7 +16,9 @@ const createLazyComponent = (
 };
 
 // Export the remote components
-export const Catalog = createLazyComponent(() => import('catalog/App'));
-export const Checkout = createLazyComponent(() => import('checkout/App'));
-export const Account = createLazyComponent(() => import('account/App'));
+export const HabitTracking = createLazyComponent(
+  () => import('habitTracking/App')
+);
+export const QuoteGeneration = createLazyComponent(() => import('quoteGeneration/App'));
+export const DecisionJournal = createLazyComponent(() => import('decisionJournal/App'));
 export const Admin = createLazyComponent(() => import('admin/App'));

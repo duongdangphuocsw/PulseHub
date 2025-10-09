@@ -24,7 +24,7 @@ This is a production-grade Micro-Frontend (MFE) monorepo using Webpack 5 Module 
        |         |         |         |
        |         |         |         |
 +------v--+  +----v----+  +---v-----+  +----v----+
-| Catalog |  | Checkout|  | Account |  | Admin   |
+| HabitTracking |  | QuoteGeneration|  | DecisionJournal |  | Admin   |
 | (React) |  | (Angular)| | (React) |  | (Angular)|
 | :5174   |  | :5175   |  | :5176   |  | :5177   |
 +---------+  +---------+  +---------+  +---------+
@@ -42,9 +42,9 @@ pnpm dev
 This will start the shell and all remotes on the following ports:
 
 - `shell`: http://localhost:5173
-- `catalog`: http://localhost:5174
-- `checkout`: http://localhost:5175
-- `account`: http://localhost:5176
+- `habitTracking`: http://localhost:5174
+- `QuoteGeneration`: http://localhost:5175
+- `decisionJournal`: http://localhost:5176
 - `admin`: http://localhost:5177
 
 ## How to add a new MFE

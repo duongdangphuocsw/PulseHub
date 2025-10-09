@@ -26,7 +26,7 @@ This is a production-grade Micro-Frontend (MFE) monorepo using Webpack 5 Module 
        |         |         |         |
        |         |         |         |
 +------v--+  +----v----+  +---v-----+  +----v----+
-| Catalog |  | Checkout|  | Account |  | Admin   |
+| HabitTracking |  | QuoteGeneration|  | DecisionJournal |  | Admin   |
 | (React) |  | (Angular)| | (React) |  | (Angular)|
 | :5174   |  | :5175   |  | :5176   |  | :5177   |
 +---------+  +---------+  +---------+  +---------+
@@ -37,10 +37,10 @@ This is a production-grade Micro-Frontend (MFE) monorepo using Webpack 5 Module 
 ```
 mfe-boilerplate/
 ├── apps/
-│   ├── account/          # React remote application
+│   ├── decisionJournal/          # React remote application
 │   ├── admin/            # Angular remote application
-│   ├── catalog/          # React remote application
-│   ├── checkout/         # Angular remote application
+│   ├── habitTracking/          # React remote application
+│   ├── quoteGeneration/         # Angular remote application
 │   └── shell/            # Main React shell application
 ├── packages/
 │   ├── auth-sdk/         # Shared authentication library
@@ -77,23 +77,23 @@ mfe-boilerplate/
 - **Framework**: React with Vite
 - **Purpose**: Central application that loads all remote modules and provides the main layout (header, sidebar, footer)
 
-### Catalog (React)
+### HabitTracking (React)
 
 - **Port**: 5174
 - **Framework**: React with Vite
-- **Purpose**: Product catalog application
+- **Purpose**: Product habitTracking application
 
-### Checkout (Angular)
+### QuoteGeneration (Angular)
 
 - **Port**: 5175
 - **Framework**: Angular with Angular CLI
-- **Purpose**: Shopping cart and checkout process
+- **Purpose**: Quote generation process
 
-### Account (React)
+### DecisionJournal (React)
 
 - **Port**: 5176
 - **Framework**: React with Vite
-- **Purpose**: User account management
+- **Purpose**: User decision journal management
 
 ### Admin (Angular)
 

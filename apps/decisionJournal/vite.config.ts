@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: 'account',
+      name: 'decisionJournal',
       filename: 'remoteEntry.js',
       exposes: {
         './App': './src/App',

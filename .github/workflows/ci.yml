@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
@@ -12,24 +12,24 @@ jobs:
 
     strategy:
       matrix:
-        app: [shell, catalog, checkout, account, admin]
+        app: [shell, habitTracking, QuoteGeneration, decisionJournal, admin]
 
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Use Node.js 18
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
+      - name: Use Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
-    - name: Install pnpm
-      run: npm install -g pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm
 
-    - name: Install dependencies
-      run: pnpm install
+      - name: Install dependencies
+        run: pnpm install
 
-    - name: Build
-      run: pnpm --filter ${{ matrix.app }} build
+      - name: Build
+        run: pnpm --filter ${{ matrix.app }} build
 
-    - name: Test
-      run: pnpm --filter ${{ matrix.app }} test
+      - name: Test
+        run: pnpm --filter ${{ matrix.app }} test

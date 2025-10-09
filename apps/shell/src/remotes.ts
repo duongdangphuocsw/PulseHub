@@ -1,1 +1,1 @@
-export { Catalog, Checkout, Account, Admin } from './remoteComponents';
+export { HabitTracking, QuoteGeneration, DecisionJournal, Admin } from './remoteComponents';
